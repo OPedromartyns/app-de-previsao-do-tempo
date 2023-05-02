@@ -2,33 +2,37 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@1,500&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+        rel="stylesheet" />
+        <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css" />
     <title>Previsão dp tempo</title>
 </head>
 
 <body>
     <div class="Main_box">
-        <input placeholder="digite o nome da cidade">
-        <button> <img class="imagem_busca" src="https://www.svgrepo.com/show/488200/find.svg" alt="Buscar"></button>
+        <input class="input_cidade" placeholder="digite o nome da cidade" />
+        <button onclick="cliqueiNoBotao()">
+            <img class="imagem_busca" src="https://www.svgrepo.com/show/488200/find.svg" alt="Buscar" />
+        </button>
 
-        <h2>Tempo em São paulo</h2>
+        <div class="medium_sized_box">
+            <h2 class="cidade">Tempo em São paulo</h2>
 
-        <p>21°C</p>
+            <p class="temp">21°C</p>
 
-        <div>
-            <img src="https://openweathermap.org/img/wn/04n.png" alt="icondenuvem">
-            <P>Nublado</P>
+            <div class="smaller_box">
+                <img class="img_previsão" src="https://openweathermap.org/img/wn/04n.png" alt="icondenuvem" />
+                <p class="texto_previsão">Nublado</p>
+            </div>
+            <p class="umoidade">Umidade 74%</p>
         </div>
-        <p>Umidade 74%</p>
     </div>
-
 </body>
 
 </html>
